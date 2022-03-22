@@ -1,0 +1,17 @@
+1、Java 中所有的代码都必须包含在 class 中，main 方法是程序的入口，并且 Java 是区分大小写的，如果写成 Main，那么程序将因找不到程序入口而无法运行。使用 public 修饰的 class 名（HelloWorld）须和源代码文件名相同。
+2、在 Java 中，变量需要先声明 (declare) 才能使用。在声明中，说明变量的类型，赋予变量以特别名字，以便在后面的程序中调用它。
+3、当 final 修饰属性时，代表该属性一旦被分配内存空间就必须初始化，它的含义是“这是无法改变的”或者“终态的”。在变量前面添加关键字 final 即可声明一个常量。在 Java 编码规范中，要求常量名必须大写。
+4、byte、short、int、long 四种基本数据类型表示整数，需要注意的是 long 类型，使用 long 修饰的变量需要在数值后面加上 L 或者 l，比如 long num = 1L;，一般使用大写 L，为了避免小写 l 与数值 1 混淆。
+5、float 和 double 类型表示浮点数，即可以表示小数部分。需要注意的是 float 类型的数值后面需要加上 F 或者 f，否则会被当成 double 类型处理。double 类型的数值可以加上 D 或 d，也可以不加。
+6、//从指定的源数组中复制一个数组，从源数组指定的位置开始，到目标数组指定的位置
+public static void arraycopy(Object src,int srcPos, Object dest,int desPos,int length)
+//返回以毫秒为单位的当前时间(从1970年到现在的毫秒数)
+public static long currentTimeMillis()
+//终止当前正在运行的Java虚拟机，status为 0时退出
+public static void exit(int status)
+//  运行垃圾收集器
+public static void gc()
+// 取得当前系统的全部属性
+public static Properties getProperties()
+//获取指定键的系统属性
+public static String  getProperty(String key)
